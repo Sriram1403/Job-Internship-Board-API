@@ -1,0 +1,37 @@
+
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "name":"Bala",
+    "email":"bala@gmail.com",
+    "password": "bala20"
+}
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email":"bala@gmail.com",
+    "password": "bala20"
+}
+###
+POST http://localhost:3000/jobs/
+content-type: application/json
+
+{
+  "title": "Software Engineer",
+  "company": "TechCo Solutions",
+  "industry": "Information Technology",
+  "location": "San Francisco, CA",
+  "jobType": "Full-time",
+  "applicationDeadline": "2023-09-15",
+  "description": "We are seeking a skilled Software Engineer to join our dynamic team..."
+}
+###
+GET  http://localhost:3000/jobs/
+###
+POST  http://localhost:3000/users/64ea1cc026241390c54f25ee/64ea1e0c90520b299648b696
+
+
+
