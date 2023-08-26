@@ -14,6 +14,8 @@ mongoose.connect(config.DB_URL, {
   useUnifiedTopology: true,
 });
 
+console.log("Hello world!");
+
 app.use(bodyParser.json());
 app.use('/auth', authRoutes);
 app.use('/jobs', jobRoutes);
